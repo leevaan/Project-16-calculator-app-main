@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html id="html-background" class="html-background" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="Levani Jikia" content="Levani Jikia">
+    <!-- <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Free Web tutorials">
+    <meta http-equiv="refresh" content="30"> -->
+    <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="When Great Minds Don’t Think Alike" />
+    <meta property="og:description" content="How much does culture influence creative thinking?" />
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link id="theme" rel="stylesheet" href="first-theme-style.css">
+    <link rel="icon" type="png"  href="./images/favicon-32x32.png">
+    <title>Calculator app</title>
+</head>
+<body>
+    <header>
+        <h1 id="helper-black-color" class="helper-black-color white-color">calc</h1>
+        <div class="headers_range-cont">
+           <div class="headers_range-number">
+                <span class="helper-black-color white-color">1</span>
+                <span class="helper-black-color white-color">2</span>
+                <span class="helper-black-color white-color">3</span>
+           </div>
+            <form action="#">
+                <label class="helper-black-color white-color theme" for="change-bckg-color">THEME</label>
+                <input id="change-bckg-color" class="range_keyboard-background" type="range" name="vol" min="0" step="30" max="60" value="0">
+            </form>
+        </div>
+       
+    </header>
+
+    <main>
+        <section id="screen-background" class="screen-background sec_one">
+        </section>
+
+        <section class="range_keyboard-background sec_two">
+            <button num="mine-num" id="white-button" class="white-button-background black-color butt">8</button>
+            <button num="mine-num" id="black-color" class="white-button-background black-color butt">7</button>
+            <button num="mine-num" class="white-button-background black-color butt">9</button>
+            <button id="delete-button" class="white-color del-reset-background butt del">DEL</button>
+
+            <button num="mine-num" class="white-button-background black-color butt">4</button>
+            <button num="mine-num" class="white-button-background black-color butt">5</button>
+            <button num="mine-num" class="white-button-background black-color butt">6</button>
+            <button class="white-button-background black-color butt">+</button>
+
+            <button num="mine-num" class="white-button-background black-color butt">1</button>
+            <button num="mine-num" class="white-button-background black-color butt">2</button>
+            <button num="mine-num" class="white-button-background black-color butt">3</button>
+            <button class="white-button-background black-color butt">-</button>
+
+            <button num="mine-num" class="white-button-background black-color butt">.</button>
+            <button num="mine-num" class="white-button-background black-color butt">0</button>
+            <button class="white-button-background black-color butt">/</button>
+            <button class="white-button-background black-color butt">x</button>
+
+            <button class="white-color del-reset-background reset-equal reset">RESET</button>
+            <button id="equal-button" class="white-color equal-background reset-equal equal">=</button>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

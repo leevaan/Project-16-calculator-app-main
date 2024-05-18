@@ -1,0 +1,71 @@
+/* ============== second theme ================*/
+.html-background{
+  background: #E6E6E6;
+}
+.screen-background{
+  background: #EEE;
+}
+.range_keyboard-background{
+  background: #D2CDCD;
+}
+.equal-background{
+  background: #C85402;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+}
+.del-reset-background{
+  background: #378187;
+  box-shadow: 0px -4px 0px 0px #1B6066 inset;
+} 
+.white-button-background{
+  background: #E5E4E1;
+  box-shadow: 0px -4px 0px 0px #A79E91 inset;
+}
+.black-color{  
+  color: #36362C;
+}
+.white-color{
+  color: #FFF
+}
+.helper-black-color{
+  color: #36362C;
+}  
+.screen-background  > span{
+  color: #36362C;
+}
+
+#change-bckg-color::-webkit-slider-thumb{
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #C85402; 
+  cursor: pointer;
+}
+/* Mozila */
+#change-bckg-color::-moz-range-thumb{
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #C85402;
+  cursor: pointer;
+  border: none;
+}
+
+#change-bckg-color::-webkit-slider-thumb:hover, #change-bckg-color::-webkit-slider-thumb:active{
+  background-color: #FF8A38; 
+}
+#change-bckg-color::-moz-range-thumb:hover, #change-bckg-color::-webkit-slider-thumb:active{
+  background-color: #FF8A38; 
+}
+.butt:hover{
+  background: #FFF;
+}
+.equal:hover{
+  background: #FF8A38;
+}
+.del:hover, .reset:hover{
+  background: #62B5BC; 
+}

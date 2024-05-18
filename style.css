@@ -124,6 +124,8 @@ main{
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+
+  margin-bottom: 15px;
 }
 .butt{
   border-radius: 10px;

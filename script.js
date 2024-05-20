@@ -165,26 +165,31 @@ secTwo.addEventListener("click", event => {
         }
         // equal (=) button
         if(event.target.textContent == "="){
-            for(let i = 0; i < screenBackground.children.length; i++){
-                if(screenBackground.children[i].textContent == "x"){
-                    result += "*";
-                }else{
-                    result += screenBackground.children[i].textContent;
-                }
-            }
-            reset();
-            let createdSpan = document.createElement("span");
-            let isFloat = formatNumberWithCommas(math.evaluate(result.replaceAll(",","")));
-            if(isFloat.indexOf(".") != -1){
-                createdSpan.setAttribute("point", "pointed");
-                createdSpan.textContent = isFloat;
+            if(screenBackground.lastElementChild.getAttribute("arithmetic") == "operator"){
+                // continue;
             }else{
-                createdSpan.textContent = isFloat;
+                
+                for(let i = 0; i < screenBackground.children.length; i++){
+                    if(screenBackground.children[i].textContent == "x"){
+                        result += "*";
+                    }else{
+                        result += screenBackground.children[i].textContent;
+                    }
+                }
+                reset();
+                let createdSpan = document.createElement("span");
+                let isFloat = formatNumberWithCommas(math.evaluate(result.replaceAll(",","")));
+                if(isFloat.indexOf(".") != -1){
+                    createdSpan.setAttribute("point", "pointed");
+                    createdSpan.textContent = isFloat;
+                }else{
+                    createdSpan.textContent = isFloat;
+                }
+                createdSpan.setAttribute("num", "added-num");
+                screenBackground.appendChild(createdSpan);
+                // Automatically delete everything after equalizing.
+                screenBackground.setAttribute("reset", "reseted");
             }
-            createdSpan.setAttribute("num", "added-num");
-            screenBackground.appendChild(createdSpan);
-            // Automatically delete everything after equalizing.
-            screenBackground.setAttribute("reset", "reseted");
         }
         
     }

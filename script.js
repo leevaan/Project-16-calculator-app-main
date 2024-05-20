@@ -75,17 +75,37 @@ const screenBackground = document.getElementById("screen-background");
 //           element.className = replacedHelperClassList;
 //       });
 // }
+const setTheme = (rangeTheme, rangeValue) => {
+    theme.href = rangeTheme;
+    range.value = rangeValue;
+    localStorage.setItem("selectedTheme", rangeTheme);
+    localStorage.setItem("selectedValue", rangeValue);
+}
+
 range.addEventListener("input", () => {
     if(range.value == "0"){
         // firstTheme();
-        theme.href = 'first-theme-style.css'
+        setTheme('first-theme-style.css', range.value);
+        // theme.href = 'first-theme-style.css'
     }else if(range.value == "30"){
         // secondTheme();
-        theme.href = 'second-theme-style .css'
+        setTheme('second-theme-style .css', range.value);
+        // theme.href = 'second-theme-style .css'
     }else if(range.value == "60"){
-        theme.href = 'third-theme-style.css'
+        setTheme('third-theme-style.css', range.value);
+        // theme.href = 'third-theme-style.css'
     }
 })
+
+
+window.onload = () => {
+    const savedTheme = localStorage.getItem('selectedTheme');
+    const savedValue = localStorage.getItem('selectedValue');
+        if (savedTheme) {
+            theme.href = savedTheme;
+            range.value = savedValue;
+        }
+};
 
 let num = "";
 let minusStart = "";

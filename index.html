@@ -17,6 +17,24 @@
     <link rel="stylesheet" href="style.css">
     <link id="theme" rel="stylesheet" href="first-theme-style.css">
     <link rel="icon" type="png"  href="./images/favicon-32x32.png">
+    <!-- <link rel="preload" href="script.js"> -->
+    <script>
+        // Initialize theme and range value from localStorage before body is loaded
+        (function() {
+            const savedTheme = localStorage.getItem('selectedTheme');
+            const savedValue = localStorage.getItem('selectedValue');
+            document.addEventListener('DOMContentLoaded', function() {
+                const theme = document.getElementById('theme');
+                const range = document.getElementById('change-bckg-color');
+                if (savedTheme) {
+                    theme.href = savedTheme;
+                }
+                if (savedValue) {
+                    range.value = savedValue;
+                }
+            });
+        })();
+    </script>
     <title>Calculator app</title>
     <style>
         .attribution { font-size: clamp(0.75rem, 0.3239rem + 1.8182vw, 0.9375rem); text-align: center; }
@@ -34,7 +52,7 @@
            </div>
             <form action="#">
                 <label class="helper-black-color white-color theme" for="change-bckg-color">THEME</label>
-                <input id="change-bckg-color" class="range_keyboard-background" type="range" name="vol" min="0" step="30" max="60" value="0">
+                <input id="change-bckg-color" class="range_keyboard-background" type="range" name="vol" min="0" step="30" max="60" >
             </form>
         </div>
        
@@ -69,7 +87,7 @@
             <button id="equal-button" class="white-color equal-background reset-equal equal">=</button>
         </section>
     </main>
-    <div style="color: #EAE3DC;" class="attribution">
+    <div class="attribution">
         <p style="margin-bottom: 3px;">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> </p>
         <p>Coded by  <a href="https://github.com/leevaan?tab=repositories">Levani Jikia</a></p>
     </div>

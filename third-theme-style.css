@@ -71,3 +71,10 @@
 .del:hover, .reset:hover{
   background: #8631AF;
 }
+
+.attribution{
+  color:#FFF;
+}
+.attribution > p > a{
+  color: #00DED0;
+}

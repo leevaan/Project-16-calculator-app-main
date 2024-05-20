@@ -69,3 +69,10 @@
 .del:hover, .reset:hover{
   background: #62B5BC; 
 }
+
+.attribution{
+  color:#378187;
+}
+.attribution a{
+  color: #C85402;
+}

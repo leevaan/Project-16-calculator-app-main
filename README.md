@@ -14,7 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Calculator app coding challenge](./design/desktop-design-theme-1.jpg)
+![Design preview for the Calculator app coding challenge](./design/desktop-design-theme-2.jpg)
+![Design preview for the Calculator app coding challenge](./design/desktop-design-theme-3.jpg)
 
 ### Built with
 

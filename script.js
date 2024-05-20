@@ -7,74 +7,6 @@ const screen = document.querySelector("#screen");
 const theme = document.getElementById("theme");
 const screenBackground = document.getElementById("screen-background");
 
-// const mineNumber = document.querySelector("[num]");
-// console.log('mineNumber: ', mineNumber);
-
-// const firstTheme = () =>{
-//      // change HTML background
-//      let firstHtmlClass = htmlBackground.classList[0];
-//      htmlBackground.classList.remove(firstHtmlClass);
-//      htmlBackground.classList.add("second-theme-html-background");
-// }
-// const secondTheme = () => {
-//       // change HTML background
-//       let firstHtmlClass = htmlBackground.classList[0];
-//       htmlBackground.classList.remove(firstHtmlClass);
-//       htmlBackground.classList.add("second-theme-html-background");
-
-//       // change SCREEN background
-//       let firstScreenClass = screenBackground.classList[0];
-//       screenBackground.classList.remove(firstScreenClass);
-//       screenBackground.classList.add("second-theme-screen-background");
-      
-//       // change EQUAL buttons background
-//       let firstEqualClass = screenBackground.classList[0];
-//       equal.classList.remove(firstEqualClass);
-//       equal.classList.add("second-theme-equal-background");
-      
-//       // change DELETE and RESET buttons background
-//       let firstDeleteClass = deleteButton.classList[0];
-//       const allFirstDeleteClass = document.querySelectorAll("."+firstDeleteClass)
-//       allFirstDeleteClass.forEach(element => {
-//           let replacedClassList = element.className.replace(firstDeleteClass, 'second-theme-del-reset-background')
-//           element.className = replacedClassList;
-          
-//       });
-
-//       // change RANGE and KEYBOARD background
-//       let firstRangeClass = range.classList[0];
-//       const allFirstRangeClass = document.querySelectorAll("." + firstRangeClass);
-//       allFirstRangeClass.forEach(element => {
-//           let replacedClassList = element.className.replace(firstRangeClass, 'second-theme-range_keyboard-background')
-//           element.className = replacedClassList;
-//       });
-
-//       // change WHITE buttons background
-//       let firstWhiteButtonClass = whiteButton.classList[0];
-//       const allFirstWhiteButtonClass = document.querySelectorAll("." + firstWhiteButtonClass);
-//       allFirstWhiteButtonClass.forEach(element => {
-//           let replacedClassList = element.className.replace(firstWhiteButtonClass, 'second-theme-white-button-background')
-//           element.className = replacedClassList;
-//       });
-      
-//       // change Black Colors 
-//       let firstBlackColorClass = blackColor.classList[1];
-//       const allFirstBlackColorClass = document.querySelectorAll("." + firstBlackColorClass);
-
-//       allFirstBlackColorClass.forEach(element => {
-//           let replacedClassList = element.className.replace(firstBlackColorClass, 'second-theme-black-color')
-//           element.className = replacedClassList;
-//       });
-//       // change Helper Black Colors for up side of keyboard
-//       let firstHelperBlackColorClass = helperBlackColor.classList[0];
-//       const allHelperBlackColorClass = document.querySelectorAll("." + firstHelperBlackColorClass);
-
-
-//       allHelperBlackColorClass.forEach(element => {
-//           let replacedHelperClassList = element.className.replace(firstHelperBlackColorClass, 'helper-black-color')
-//           element.className = replacedHelperClassList;
-//       });
-// }
 const setTheme = (rangeTheme, rangeValue) => {
     theme.href = rangeTheme;
     range.value = rangeValue;
@@ -96,7 +28,6 @@ range.addEventListener("input", () => {
         // theme.href = 'third-theme-style.css'
     }
 })
-
 
 window.onload = () => {
     const savedTheme = localStorage.getItem('selectedTheme');

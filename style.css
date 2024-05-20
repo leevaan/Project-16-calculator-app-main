@@ -163,6 +163,6 @@ main{
 
 @media only screen and (max-height: 785px) {
 html{
-    height: 100vw;
+    height: auto;
   }
 }

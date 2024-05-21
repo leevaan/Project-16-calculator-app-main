@@ -163,7 +163,7 @@ main{
 
 @media only screen and (max-height: 785px) {
 html{
-    hheight: auto;
+    height: auto;
     padding: 30px 0 30px 0;
   }
 }

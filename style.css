@@ -157,7 +157,9 @@ main{
 .equal{
   grid-column: 3/5;
 }
-
+button:active{
+  transform: scale(0.99,0.99);
+}
 
 /* ================ SECTION TWO end ================ */
 
